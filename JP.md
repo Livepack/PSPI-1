@@ -1,6 +1,7 @@
 # JP
 
-```html
+```c
 int main() {
   printf("Witaj świecie\n");
 }
+```
