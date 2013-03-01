@@ -1,14 +1,16 @@
-# Notatki do Technologii Internetowych
+# <li><a href="tao.inf.ug.edu.pl/dr W.Bzyl">dr W.Bzyl</a>
+
+# Notatki z Technologii Internetowych
 
 > Dzień bez kodowania jest dniem straconym :)
 
 Znaczniki:
 
-* p
-* ul, ol
+* p - akapit
+* ol, ul - lista uporzadkowana i nieuporzadkowana
   * li
-* img
-* h
+* img - obraz
+* h - naglówek (od h1 do h6)
 
 Szablon pliku HTML5:
 
@@ -24,3 +26,12 @@ Szablon pliku HTML5:
 </body>
 </html>
 ```
+
+* **kursywa** to *
+np.: *Ania* ma Stuarta :)
+
+* **wytluszczenie** to **
+np.: **Ania** ma Stuarta :)
+     
+* **pochylona kursywa** to ***
+np.: ***Ania*** ma Stuarta :)
