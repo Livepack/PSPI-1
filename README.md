@@ -1,6 +1,6 @@
 # Notatki do Technologii Internetowych
 
-> Dzień bez kodowania jest dniem straconym.
+> Dzień bez kodowania jest dniem straconym :)
 
 Znaczniki:
 
