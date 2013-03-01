@@ -1,4 +1,9 @@
-PSPI---TI
-=========
+# Notatki do Technologii Internetowych
 
-notatki z przedmiotu Technologie internetowe
+Znaczniki:
+
+* p
+* ul, ol
+  * li
+* img
+* h
