@@ -1,4 +1,7 @@
-<body background="http://www.zdjecia.biz.pl/zdjecie,pomaranczowe-tlo.php" bgproperties="fixed">**<center>CIASTA I DESERY.</center>**
+**SPIS TRESCI**
+
+<p>**1. CIASTA I DESERY.**
 <p>**2. ZAPIEKANKI.**
-<p>**3. SZYBKIE I SMACZNE OBIADY.**</body>
+<p>**3. SZYBKIE I SMACZNE OBIADY.**
+
 
