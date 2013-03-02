@@ -1,3 +1,3 @@
-**1. DESERY I CIASTA.**
-<p>**2. PRZEKĄSKI.**
-<p>**3. DANIA GŁÓWNE.**
+**1. CIASTA I DESERY.**
+<p>**2. ZAPIEKANKI.**
+<p>**3. SZYBKIE I SMACZNE OBIADY.**
