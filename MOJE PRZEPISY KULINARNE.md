@@ -1,6 +1,6 @@
 **SPIS TRESCI**
 ---------------
-<p>**1. CIASTA I DESERY.**
+<p>**1. CIASTA I DESERY.**<p>
 <ul>
 <li><a href="#">Tort bezowo-lodowy.</a></li>
 <li><a href="#">Ciasto kawowe.</a></li>
