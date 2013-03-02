@@ -1,4 +1,4 @@
-# <li><a href="tao.inf.ug.edu.pl/dr W.Bzyl">dr W.Bzyl</a>
+# <li><a href="www.tao.inf.ug.edu.pl/dr W.Bzyl">dr W.Bzyl</a>
 
 # Notatki z Technologii Internetowych
 
