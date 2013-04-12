@@ -64,3 +64,31 @@ x=x*a;
 return x;
 }
 ```
+Zad. 4. Napisz funkcję obliczającą pierwiastek z a algorytmem Herona.
+```c
+#include <stdio.h>
+#include <math.h>
+double Heron (double a){
+double x=1, eps=1e-15;
+do {
+x=0.5*(x+(a/x));
+}
+while (fabs(x-a/x)>eps*x);
+return x;
+}
+int main(){
+double a;
+double x=1;
+double z;
+printf ("Podaj liczbe: ");
+scanf ("%lf", &a);
+for (z=1e-5; z<=1e15; z=z*10){
+printf ("\nHeron(%lf)=%.15lf\n", z, Heron(a));
+printf ("\nsqrt(%lf)=%.15lf\t", z, sqrt(a));
+printf ("\n\nblad wzgledny=%.15le\n", (Heron(a)-sqrt(a))/sqrt(a));
+getchar ();
+getchar ();
+return 0;
+}
+}
+```
