@@ -36,3 +36,31 @@ getchar ();
 getchar ();
 }
 ```
+Zad. 3. Napisz funkcję obliczającą a^n (n-liczba naturalna) za pomocą pętli.
+```c
+#include <stdio.h>
+#include <math.h>
+double potega(double a, int n);
+int main() {
+double a;
+int n;
+double x;
+printf("Podaj liczbe: ");
+scanf("%lf",&a);
+printf("\nPodaj wykladnik (liczba naturalna): ");
+scanf("%d",&n);
+x=potega(a,n);
+printf("\n%.3lf do potegi %d rowna sie %.3lf ", a, n, x);
+getchar();
+getchar();
+return 0;
+}   
+double potega(double a, int n) {
+int i;
+double x=1.0;
+for(i=1;i<=n;i++){
+x=x*a;
+}
+return x;
+}
+```
