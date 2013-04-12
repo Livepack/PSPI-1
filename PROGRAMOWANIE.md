@@ -3,8 +3,7 @@
 FUNKCJE
 
 Zad. 1. Napisz funkcję obliczającą pole kuli o podanym promieniu.
-
-***c
+```c
 #include <stdio.h>
 #include <math.h>
 double poleKuli(double r){
@@ -19,4 +18,4 @@ getchar ();
 getchar ();
 return 0;
 }
-***
+```
