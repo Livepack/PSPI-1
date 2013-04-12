@@ -19,3 +19,20 @@ getchar ();
 return 0;
 }
 ```
+Zad. 2. Napisz funkcję wartoscBezwzgledna zwracająca wartość bezwzględną z liczby całkowitej.
+```c
+# include <stdio.h>
+# include <math.h>
+int wartoscBezwzgledna(int x){
+if (x<=0) return -x;
+else return x;
+}
+int main (){
+int x;
+printf ("Podaj liczbe: ");
+scanf ("%d", &x);
+printf ("\nWARTOSC BEZWZGLEDNA TO %d", wartoscBezwzgledna(x));
+getchar ();
+getchar ();
+}
+```
