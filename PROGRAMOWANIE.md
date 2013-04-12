@@ -1,6 +1,6 @@
 # JEZYKI PROGRAMOWANIA
 
-FUNKCJE
+3. FUNKCJE
 
 Zad. 1. Napisz funkcję obliczającą pole kuli o podanym promieniu.
 ```c
