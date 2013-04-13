@@ -112,7 +112,19 @@ Zad. 6.
 
 IV. TABLICE
 
-Zad. 1. Wypisz wszystkie elementy tablicy: ...
+Zad. 1. Wypisz wszystkie elementy tablicy: int dane[]={-44, 5, 67, -2, 0, 33, 77} w kolejności od pierwszego do ostatniego i odwrotnie.
 ```c
-
+#include <stdio.h>
+#include <math.h>
+int main (){
+int dane[]={-44, 5, 67, -2, 0, 33, 77};
+int i;
+int max=6;
+for(i=0; i<=max; i++)
+printf("%d,", dane[i]);
+for(i=max; i>=0; i--)
+printf("%d,", dane[i]);
+getchar();
+return 0;
+}
 ```
