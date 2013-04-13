@@ -35,3 +35,33 @@ np.: **Ania** ma Stuarta :)
      
 * **pochylona kursywa** to ***
 np.: ***Ania*** ma Stuarta :)
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+  <p>ala ma kota</p>
+  <p class="warning">ola ma kota</p>
+  <h3 class="warning">Warning!</h3>
+</html>
+
+body {
+  background:red;
+  padding: 38px;
+}
+
+html {
+  background: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  background: green;
+  padding: 24px;
+  margin: 24px;
+}
+h3.warning {background: white; }
