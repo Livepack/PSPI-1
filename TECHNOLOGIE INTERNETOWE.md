@@ -36,6 +36,7 @@ np.: **Ania** ma Stuarta :)
 * **pochylona kursywa** to ***
 np.: ***Ania*** ma Stuarta :)
 
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,7 +48,9 @@ np.: ***Ania*** ma Stuarta :)
   <p class="warning">ola ma kota</p>
   <h3 class="warning">Warning!</h3>
 </html>
+```
 
+```c
 body {
   background:red;
   padding: 38px;
@@ -64,4 +67,4 @@ p {
   padding: 24px;
   margin: 24px;
 }
-h3.warning {background: white; }
+```
