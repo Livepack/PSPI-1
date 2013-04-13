@@ -128,3 +128,23 @@ getchar();
 return 0;
 }
 ```
+Zad. 2. Napisz program, który podany tekst wyświetli wielkimi literami.
+```c
+#include <stdio.h>
+#include <ctype.h>
+#define MAX 32
+int main(){
+char napis[MAX];
+int c, i=0, end;
+puts("Wpisz dowolny tekst: ");
+while((c=getchar())!=EOF){
+napis[i]=toupper(c);
+i++;
+}
+end=--i;
+for (i=0; i<=end; i++)
+printf ("%c", napis[i]); 
+getchar();                 
+return 0;                 
+}
+```
