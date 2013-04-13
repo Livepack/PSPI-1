@@ -109,3 +109,10 @@ Zad. 6.
 ```c
 
 ```
+
+IV. TABLICE
+
+Zad. 1. Wypisz wszystkie elementy tablicy: ...
+```c
+
+```
