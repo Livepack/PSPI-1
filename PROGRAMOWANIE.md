@@ -103,6 +103,37 @@ int main(){
 ```
 Zad. 5.
 ```c
+Szybkie boliczanie potęgi n-tej liczby a
+
+#include <stdio.h>
+int potegaAn(int a, int n);
+
+int main() {
+    int a, p, n;
+    puts("Podaj liczbe naturalna: ");
+    scanf("%d",&a);
+    puts("Podaj wykladnik (liczba naturalna): ");
+    scanf("%d",&n);
+    p=potegaAn(a,n);
+    printf("\n\n Wartosc %d do potegi %d wynosi %d ", a, n, p);
+    getchar();
+    getchar();
+    return 0;
+        }   
+
+int potegaAn(int a, int n) {
+    int i=n, p=1, q=a;
+    while(i>0){
+    if(i%2!=0)
+    p=p*q;
+    q=q*q;
+    i=i/2;
+}
+
+    return p;
+}
+
+
 
 ```
 Zad. 6.
