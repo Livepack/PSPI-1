@@ -19,7 +19,7 @@
 <li><a href="#">Skrzydelka z ryżem.</a></li>
 <li><a href="#">Karkówka w sosie balsamicznym.</a></li>
 </ul>
-<p>**4. SALATKI.**
+<p>**4. SAŁATKI.**
 <ul>
 <li><a href="#">Gyros.</a></li>
 <li><a href="#">Salatka z ananasów.</a></li>
