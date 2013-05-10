@@ -75,9 +75,13 @@ p {
 
 
 akiszel@p137-07:~$ git clone git@github.com:akiszel/PSPI.git
+
 Cloning into 'PSPI'...
+
 Warning: Permanently added the RSA host key for IP address '204.232.175.90' to the list of known hosts.
+
 remote: Counting objects: 150, done.
+
 remote: Compressing objects: 100% (103/103), done.
 remote: Total 150 (delta 43), reused 147 (delta 40)
 Receiving objects: 100% (150/150), 98.20 KiB | 130 KiB/s, done.
