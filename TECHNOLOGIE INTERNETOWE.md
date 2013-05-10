@@ -83,22 +83,38 @@ Warning: Permanently added the RSA host key for IP address '204.232.175.90' to t
 remote: Counting objects: 150, done.
 
 remote: Compressing objects: 100% (103/103), done.
+
 remote: Total 150 (delta 43), reused 147 (delta 40)
+
 Receiving objects: 100% (150/150), 98.20 KiB | 130 KiB/s, done.
+
 Resolving deltas: 100% (43/43), done.
+
 akiszel@p137-07:~$ ls
+
 Dokumenty  Muzyka   profile.V2 Publiczny  tmp	  Zad-1.c
+
 etc	   Obrazy   PSPI	Pulpit	   Wideo  Zad-1.c~
+
 mail	   Pobrane  PSPI-TI	Szablony   Zad.   Zad.1..c~
+
 akiszel@p137-07:~$ cd PSPI
+
 akiszel@p137-07:~/PSPI$ git status
+
 # On branch master
+
 nothing to commit (working directory clean)
+
 akiszel@p137-07:~/PSPI$ git branch -a
+
 * master
+
   remotes/origin/HEAD -> origin/master
+  
   remotes/origin/gh-pages
-  remotes/origin/master
+  
+  
 akiszel@p137-07:~/PSPI$ git checkout --track origin/gh-pages
 Branch gh-pages set up to track remote branch gh-pages from origin.
 Switched to a new branch 'gh-pages'
