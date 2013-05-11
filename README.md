@@ -3,4 +3,4 @@ Witam :)
 * TECHNOLOGIE INTERNETOWE
 * JEZYKI PROGRAMOWANIA
 * KOMPUTEROWE WSPOMAGANIE NAUCZANIA PRZEDMIOTÓW SCISLYCH I PRZYRODNICZYCH
-<p>oraz do korzystania ze sprawdzonych przeze mnie przepisów kulinarnych :)<p>
+oraz do korzystania ze sprawdzonych przeze mnie przepisów kulinarnych :)<p>
