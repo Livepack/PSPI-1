@@ -160,3 +160,150 @@ To git@github.com:akiszel/PSPI.git
    e3c38bc..e75b5ba  gh-pages -> gh-pages
 akiszel@p137-07:~/PSPI/images$ 
 ```
+
+```html
+Windows PowerShell
+Copyright (C) 2009 Microsoft Corporation. All rights reserved.
+
+C:\Users\Ania\Documents\GitHub> git clone git@github.com:akiszel/PSPI.git
+fatal: destination path 'PSPI' already exists and is not an empty directory.
+C:\Users\Ania\Documents\GitHub> ls
+
+
+    Directory: C:\Users\Ania\Documents\GitHub
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----        2013-05-12     18:06            PSPI
+
+
+C:\Users\Ania\Documents\GitHub> cd PSPI
+C:\Users\Ania\Documents\GitHub\PSPI [gh-pages]> git status
+# On branch gh-pages
+nothing to commit, working directory clean
+C:\Users\Ania\Documents\GitHub\PSPI [gh-pages]> git branch -a
+* gh-pages
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/gh-pages
+  remotes/origin/master
+C:\Users\Ania\Documents\GitHub\PSPI [gh-pages]> git checkout --track origin/gh-p
+ages
+fatal: A branch named 'gh-pages' already exists.
+C:\Users\Ania\Documents\GitHub\PSPI [gh-pages]> cd images/
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages]> mv ~/Pulpit/1.jpg .
+Move-Item : Cannot find path 'C:\Users\Ania\Pulpit\1.jpg' because it does not e
+xist.
+At line:1 char:3
++ mv <<<<  ~/Pulpit/1.jpg .
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Ania\Pulpit\1.jpg:Stri
+   ng) [Move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveI
+   temCommand
+
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages]> mv ~\Desktop\1.JPG .
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages +1 ~0 -0 !]> ls
+
+
+    Directory: C:\Users\Ania\Documents\GitHub\PSPI\images
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---        2013-05-11     11:02    1832019 1.JPG
+-a---        2013-05-12     18:06       3188 body-bg.jpg
+-a---        2013-05-12     18:06      31731 download-button.png
+-a---        2013-05-12     18:06       3219 github-button.png
+-a---        2013-05-12     18:06      10442 header-bg.jpg
+-a---        2013-05-12     18:06      34222 highlight-bg.jpg
+-a---        2013-05-12     18:06       3200 sidebar-bg.jpg
+-a---        2013-05-12     18:06      92056 tort.jpg
+
+
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages +1 ~0 -0 !]> git status
+# On branch gh-pages
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       1.JPG
+nothing added to commit but untracked files present (use "git add" to track)
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages +1 ~0 -0 !]> git add 1.jpg
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages +1 ~0 -0 !]> git status
+# On branch gh-pages
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       1.JPG
+nothing added to commit but untracked files present (use "git add" to track)
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages +1 ~0 -0 !]> git commit -m
+"dodałam obrazek 1.jpg"
+# On branch gh-pages
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       1.JPG
+nothing added to commit but untracked files present (use "git add" to track)
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages +1 ~0 -0 !]> git status
+# On branch gh-pages
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       1.JPG
+nothing added to commit but untracked files present (use "git add" to track)
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages +1 ~0 -0 !]> git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages +1 ~0 -0 !]> git add .
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages +1 ~0 -0]> ls
+
+
+    Directory: C:\Users\Ania\Documents\GitHub\PSPI\images
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---        2013-05-11     11:02    1832019 1.JPG
+-a---        2013-05-12     18:06       3188 body-bg.jpg
+-a---        2013-05-12     18:06      31731 download-button.png
+-a---        2013-05-12     18:06       3219 github-button.png
+-a---        2013-05-12     18:06      10442 header-bg.jpg
+-a---        2013-05-12     18:06      34222 highlight-bg.jpg
+-a---        2013-05-12     18:06       3200 sidebar-bg.jpg
+-a---        2013-05-12     18:06      92056 tort.jpg
+
+
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages +1 ~0 -0]> git status
+# On branch gh-pages
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       new file:   1.JPG
+#
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages +1 ~0 -0]> git commit -m "d
+odałam obrazek 1.jpg"
+[gh-pages 8959e8b] dodałam obrazek 1.jpg
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 images/1.JPG
+
+Warning: Your console font probably doesn't support Unicode. If you experience s
+trange characters in the output, consider switching to a TrueType font such as L
+ucida Console!
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages]> git status
+# On branch gh-pages
+# Your branch is ahead of 'origin/gh-pages' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages]> git push
+Warning: Permanently added 'github.com,204.232.175.90' (RSA) to the list of know
+n hosts.
+Counting objects: 6, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.73 MiB, done.
+Total 4 (delta 2), reused 0 (delta 0)
+To git@github.com:akiszel/PSPI.git
+   e65c80e..8959e8b  gh-pages -> gh-pages
+C:\Users\Ania\Documents\GitHub\PSPI\images [gh-pages]>
+```
