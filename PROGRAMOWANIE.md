@@ -1,4 +1,4 @@
-III. FUNKCJE
+**III. FUNKCJE**
 
 Zad. 1. Napisz funkcję obliczającą pole kuli o podanym promieniu.
 ```c
@@ -170,9 +170,9 @@ double potegaAn (double a, int n)
 }
 ```
 
-IV. TABLICE
+**IV. TABLICE**
 
-Zad. 1. Wypisz wszystkie elementy tablicy: int dane[]={-44, 5, 67, -2, 0, 33, 77} w kolejności od pierwszego do ostatniego i odwrotnie.
+**Zad. 1.** Wypisz wszystkie elementy tablicy: int dane[]={-44, 5, 67, -2, 0, 33, 77} w kolejności od pierwszego do ostatniego i odwrotnie.
 ```c
 #include <stdio.h>
 #include <math.h>
