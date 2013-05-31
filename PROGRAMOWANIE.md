@@ -1,4 +1,4 @@
-**III. FUNKCJE**
+[**III. FUNKCJE**]
 
 **Zad. 1.** Napisz funkcję obliczającą pole kuli o podanym promieniu.
 ```c
