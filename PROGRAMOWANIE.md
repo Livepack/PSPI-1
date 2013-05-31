@@ -1,6 +1,274 @@
 ### **I. PETLE**
 
-
+**Zad. 1.** Wypisz liczby calkowite od 0 do 23:
+a) za pomoca petli for
+```c
+#include <stdio.h>
+int main(){
+	int n;
+	for (n=0; n<=23; n=n+1)
+		printf ("\n%d\n", n);      
+	getchar ();    
+	return 0; 
+}
+```
+b) za pomoca petli while
+```c
+#include <stdio.h>
+int main(){
+	int n=0;
+	while (n<=23){
+		printf ("\n%d\n", n);
+		n=n+1;
+	}          
+	getchar ();    
+	return 0;
+}
+```
+c) za pomoca petli do-while
+```c
+#include <stdio.h>
+int main(){
+	int n=0;
+	do {
+		printf ("%d\n", n);    
+		n=n+1; 
+	}
+	while (n<=23); 
+	getchar ();
+}
+```
+**Zad. 2.** Wypisz liczby od -3.5 do 7.5 z krokiem co 0.5:
+a) za pomoca petli for
+```c
+#include <stdio.h>
+int main(){
+	double n;
+	for (n=-3.5; n<=7.5; n=n+0.5)
+		printf ("%.1lf\n", n);      
+	getchar ();    
+	return 0; 
+}
+```
+b) za pomoca petli while
+```c
+#include <stdio.h>
+int main(){
+	double n=-3.5;
+	while (n<=7.5){
+		printf ("%.1lf\n", n);
+		n=n+0.5;
+	}          
+	getchar ();    
+	return 0;
+}
+```
+c) za pomoca petli do-while
+```c
+#include <stdio.h>
+int main()
+{
+	double i,n;
+	i=-3.5;
+	n=7.5;
+	do
+	{ printf ("%.1lf\n", i);
+	i=i+0.5;
+	}
+	while (i<=n);
+	getchar(); getchar();
+	return 0;
+}
+```
+**Zad. 3.** Wczytaj n liczb i wyswietl ich sume i srednia arytmetyczna.
+```c
+#include<stdio.h>
+int main(){
+	int n,i;
+	double x, suma=0.0, srednia;
+	do{
+		printf ("Podaj ilosc liczb (co najmniej 1): ");
+		scanf ("%d", &n);
+	}
+	while (n<1);
+	for (i=1;i<=n;i++){
+		printf ("\nPodaj %d liczbe: ",i);
+		scanf ("%lf", &x);
+		suma=suma+x;
+	}
+	srednia=suma/n;
+	printf ("\nSuma podanych %d liczb wynosi: %.3lf",n,suma);
+	printf ("\n\nSrednia z podanych %d liczb wynosi: %.3lf",n,srednia);
+	getchar();
+	getchar();
+	return 0;
+}
+```
+**Zad. 4.** Wypisz kwadraty i szesciany liczb naturalnych od 1 do liczby podanej przez użytkownika:
+a) za pomoca petli for
+```c
+#include <stdio.h>
+int main ()
+{
+	int i, n;
+	printf ("Podaj liczbe: ");
+	scanf ("%d", &n);
+	for (i = 1; i <= n; i++)
+	{
+		printf ("\n%d %d %d\n", i, i * i, i * i * i);
+	}
+	printf ("\n");
+	getchar ();
+	getchar ();
+	return 0;
+}
+```
+b) za pomoca petli while
+```c
+#include <stdio.h>
+int main ()
+{
+	int i, n;
+	printf ("Podaj liczbe: ");
+	scanf ("%d", &n);
+	i = 1;
+	while (i <= n)
+	{
+		printf ("\n%d %d %d \n", i, i * i, i * i * i);
+		i++;
+	}
+	printf ("\n");
+	getchar ();
+	getchar ();
+	return 0;
+}
+```
+c) za pomoca petli do-while
+```c
+#include <stdio.h>
+int main ()
+{
+	int i, n;
+	printf ("Podaj liczbe: ");
+	scanf ("%d", &n);
+	i = 1;
+	do
+	{
+		printf ("\n%d %d %d \n", i, i * i, i * i * i);
+		i++;
+	}
+	while (i <= n);
+	getchar ();
+	getchar ();
+	return 0;
+}
+```
+**Zad. 5.** Oblicz sume kwadratów liczb od 3 do 15:
+a) za pomoca petli for
+```c
+# include <stdio.h>
+int main (){
+	int i;
+	int suma=0;
+	for (i=3; i<=15; i++)
+	{
+		suma = suma + (i*i);
+	}
+	printf ("Suma kwadratow liczb od 3 do 15: %d", suma);
+	i=3;
+	suma=0;
+	getchar ();
+	return 0;
+}
+```
+b) za pomoca petli while
+```c
+# include <stdio.h>
+int main (){
+	int i;
+	int suma=0;
+	while (i<=15)
+	{
+		suma = suma + (i*i);
+		i++;
+	}
+	printf ("Suma kwadratow liczb od 3 do 15: %d", suma);
+	getchar ();
+	return 0;
+}
+```
+**Zad. 6.** Wypisz sinusy i cosinusy katów 0 ... 180 stopni z krokiem co 30 stopni za pomoca petli for.
+```c
+# include <stdio.h>
+# include <math.h>
+int main (){
+	double x;
+	for (x=0; x<=180; x=x+30){
+		printf ("sin(%.0lf)=%.3lf\n", x, sin(x*M_PI/180));
+		printf ("cos(%.0lf)=%.3lf\n", x, cos(x*M_PI/180));
+	}
+	getchar ();
+	return 0;
+}
+```
+**Zad. 7.** Wypisz znaki od 'a' do 'k' wraz z ich kodami ASCII (dziesietnie i szesnastkowo) w kolejnosci rosnacej i malejacej za pomoca petli for.
+```c
+# include <stdio.h>
+int main (){
+	char i;
+	for (i=32; i<=127;i++) {
+		printf ("Litera:%c   znak ASCII:%3d   szesnastkowo:%2x\n", i, i, i);
+	}
+	getchar ();
+	return 0;
+}
+```
+**Zad. 8.** Napisz petle while wypisujaca na ekran znaki podane przez użytkownika, aż do napotkania znaku 'x'.
+```c
+#include <stdio.h>
+#define znak 'x'
+int main() {
+	char i='a';
+	while(i!=znak)    {
+		printf("Podaj litere: ");
+		scanf("%c", &i);
+		printf("Podales litere: %c \n\n",i);
+		getchar();
+	}
+	printf("PODALES LITERE X - KONIEC PROGRAMU!");
+	getchar();
+	return 0;
+}
+```
+**Zad. 9.** Napisz program wyswietlajacy tabliczke mnożenia do 13.
+```c
+#include <stdio.h>
+int main ()
+{
+  int i, j;
+  printf ("\n    |");
+  for (i = 1; i <= 13; i++)
+    {
+      printf ("%4d ", i);
+    }
+  printf
+    ("\n----|-----------------------------------------------------------------\n");
+  for (i = 1; i <= 13; i++)
+    {
+      for (j = 1; j <= 13; j++)
+        {
+          if (j == 1)
+            {
+              printf ("\n%3d |", j * i);
+            }
+          printf ("%4d ", j * i);
+        }
+      putchar ('\n');
+    }
+  getchar ();
+  return 0;
+}
+```
 
 ### **II. INSTRUKCJE WARUNKOWE**
 
