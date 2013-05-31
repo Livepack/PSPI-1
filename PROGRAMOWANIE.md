@@ -1,6 +1,6 @@
 **III. FUNKCJE**
 
-Zad. 1. Napisz funkcję obliczającą pole kuli o podanym promieniu.
+**Zad. 1.** Napisz funkcję obliczającą pole kuli o podanym promieniu.
 ```c
 #include <stdio.h>
 #include <math.h>
@@ -18,7 +18,7 @@ int main(){
 	return 0;
 }
 ```
-Zad. 2. Napisz funkcję wartoscBezwzgledna zwracająca wartość bezwzględną z liczby całkowitej.
+**Zad. 2.** Napisz funkcję wartoscBezwzgledna zwracająca wartość bezwzględną z liczby całkowitej.
 ```c
 #include <stdio.h>
 #include <ctype.h>
@@ -39,7 +39,7 @@ int main(){
 	return 0;                 
 }
 ```
-Zad. 3. Napisz funkcję obliczającą a^n (n-liczba naturalna) za pomocą pętli.
+**Zad. 3.** Napisz funkcję obliczającą a^n (n-liczba naturalna) za pomocą pętli.
 ```c
 #include <stdio.h>
 #include <math.h>
@@ -69,7 +69,7 @@ double potega(double a, int n)
 	return x;
 }
 ```
-Zad. 4. Napisz funkcję obliczającą pierwiastek z a algorytmem Herona.
+**Zad. 4.** Napisz funkcję obliczającą pierwiastek z a algorytmem Herona.
 ```c
 #include <stdio.h>
 #include <math.h>
@@ -100,7 +100,7 @@ int main(){
 	}
 }
 ```
-Zad. 5. Napisz funkcje do szybkiego obliczania a^n.
+**Zad. 5.** Napisz funkcje do szybkiego obliczania a^n.
 ```c
 #include <stdio.h>
 int potegaAn (int a, int n);
@@ -130,7 +130,7 @@ int
 	return p;
 }
 ```
-Zad. 6. Napisz funkcje do szybkiego obliczania a^n (n-liczba cakowita, a-typ double).
+**Zad. 6.** Napisz funkcje do szybkiego obliczania a^n (n-liczba cakowita, a-typ double).
 ```c
 #include <stdio.h>
 double potegaAn (double a, int n);
@@ -188,7 +188,7 @@ int main (){
 	return 0;
 }
 ```
-Zad. 2. Napisz program, który podany tekst wyświetli wielkimi literami.
+**Zad. 2.** Napisz program, który podany tekst wyświetli wielkimi literami.
 ```c
 #include <stdio.h>
 #include <ctype.h>
@@ -205,7 +205,7 @@ int main(){
 	return 0;
 }
 ```
-Zad. 3. Napisz funkcje sprawdzajaca, czy podana przez użytkownika liczba znajduje sie w powyższej tablicy.
+**Zad. 3.** Napisz funkcje sprawdzajaca, czy podana przez użytkownika liczba znajduje sie w powyższej tablicy.
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -238,7 +238,7 @@ int main (){
 	return 0;
 }
 ```
-Zad. 4. Znajdź maksymalna liczbe w tablicy liczb zmiennoprzecinkowych podanych przez użytkownika.
+**Zad. 4.** Znajdź maksymalna liczbe w tablicy liczb zmiennoprzecinkowych podanych przez użytkownika.
 ```c
 #include <stdio.h>
 #define rozmiar 5               
@@ -274,7 +274,7 @@ double emax (double dane[])
 	return max;
 }
 ```
-Zad. 5. Napisz funkcje obliczajaca srednia arytmetyczna z liczb zawartych w tablicy liczb zmiennoprzecinkowych.
+**Zad. 5.** Napisz funkcje obliczajaca srednia arytmetyczna z liczb zawartych w tablicy liczb zmiennoprzecinkowych.
 ```c
 #include <stdio.h>
 #define rozmiar 5
@@ -308,7 +308,7 @@ double esrednia (double dane[], int n)
 	return suma / rozmiar;
 }
 ```
-Zad. 6. Wypisz napis: char tekst [] = "Tablice to podstawa programowania." od końca do poczatku.
+**Zad. 6.** Wypisz napis: char tekst [] = "Tablice to podstawa programowania." od końca do poczatku.
 ```c
 #include <stdio.h>
 int main () {
@@ -323,7 +323,7 @@ int main () {
 	return 0;
 }
 ```
-Zad. 7. Napisz funkcje void odKonca (char napis []) która odwraca podany napis (taka funkcja jest potrzebna np. do zamiany liczby na system dwójkowy).
+**Zad. 7.** Napisz funkcje void odKonca (char napis []) która odwraca podany napis (taka funkcja jest potrzebna np. do zamiany liczby na system dwójkowy).
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -360,7 +360,7 @@ void odKonca (char napis[])
 		napis[i] = rewers[i];
 }
 ```
-Zad. 8. Napisz funkcje zwracajaca najmniejszy i najwiekszy element z tablicy liczb zmiennoprzecinkowych podanej jako argument funkcji.
+**Zad. 8.** Napisz funkcje zwracajaca najmniejszy i najwiekszy element z tablicy liczb zmiennoprzecinkowych podanej jako argument funkcji.
 ```c
 #include <stdio.h>
 #define rozmiar 5
@@ -411,7 +411,7 @@ struct minMax extr (double dane[], int n)
 	return mM;
 }
 ```
-Zad. 9. Napisać program, który pobiera od użytkownika n liczb i wczytuje je do tablicy. Napisać funkcje, która zwróci ostatnia liczbe tej tablicy podzielna przez 7.
+**Zad. 9.** Napisać program, który pobiera od użytkownika n liczb i wczytuje je do tablicy. Napisać funkcje, która zwróci ostatnia liczbe tej tablicy podzielna przez 7.
 ```c
 #include <stdio.h>
 #define rozmiar 5
@@ -449,7 +449,7 @@ int jest7 (int dane[])
 	return a;
 }
 ```
-Zad. 10. Napisz funkcje obliczajaca iloczyn skalarny dwóch wektorów n-wymiarowych.
+**Zad. 10.** Napisz funkcje obliczajaca iloczyn skalarny dwóch wektorów n-wymiarowych.
 ```c
 #include <stdio.h>
 #define N 10                     
@@ -511,7 +511,7 @@ void wprWekt(double dane[], int n)
 	}
 }
 ```
-Zad. 11. Napisz funkcje, która transponuje tablice kwadratowa double tab [128] [128] podana jako argument. Napisz i wykorzystaj funkcje void wyswietlMacierz (double m [128] [128], int wierszy, int kolumn);
+**Zad. 11.** Napisz funkcje, która transponuje tablice kwadratowa double tab [128] [128] podana jako argument. Napisz i wykorzystaj funkcje void wyswietlMacierz (double m [128] [128], int wierszy, int kolumn);
 ```c
 #include <stdio.h>
 #define N 128                     
