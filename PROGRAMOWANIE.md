@@ -40,6 +40,7 @@ int main(){
 }
 ```
 **Zad. 2.** Wypisz liczby od -3.5 do 7.5 z krokiem co 0.5:
+
 a) za pomoca petli for
 ```c
 #include <stdio.h>
@@ -106,6 +107,7 @@ int main(){
 }
 ```
 **Zad. 4.** Wypisz kwadraty i szesciany liczb naturalnych od 1 do liczby podanej przez użytkownika:
+
 a) za pomoca petli for
 ```c
 #include <stdio.h>
@@ -165,6 +167,7 @@ int main ()
 }
 ```
 **Zad. 5.** Oblicz sume kwadratów liczb od 3 do 15:
+
 a) za pomoca petli for
 ```c
 # include <stdio.h>
