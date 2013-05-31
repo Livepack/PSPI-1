@@ -1,6 +1,7 @@
 ### **I. PETLE**
 
 **Zad. 1.** Wypisz liczby calkowite od 0 do 23:
+
 a) za pomoca petli for
 ```c
 #include <stdio.h>
