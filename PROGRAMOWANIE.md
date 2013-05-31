@@ -1,6 +1,165 @@
-### **I. PETLE***
+### **I. PETLE**
 
-### **II. INSTRUKCJE WARUNKOWE***
+
+
+### **II. INSTRUKCJE WARUNKOWE**
+
+**Zad. 1.** Napisz program liczacy pierwiastki trójmianu kwadratowego: a*x^2 + b*x + c=0.
+```c
+#include <math.h>
+int main (){
+	double a, b, c, delta, x1, x2;
+	printf ("Podaj a: ");
+	scanf ("%lf", &a);
+	printf ("\nPodaj b: ");
+	scanf ("%lf", &b);
+	printf ("\nPodaj c: ");
+	scanf ("%lf", &c);
+	delta = b*b-4*a*c;
+	printf ("\ndelta = %.3lf\n\n", delta);
+	if (delta>0){
+		x1 = (-b-sqrt(delta))/(2*a);
+		x2 = (-b+sqrt(delta))/(2*a);
+		printf ("MAMY DWA ROZWIAZANIA, BO DELTA JEST WIEKSZA NIZ 0.\n");
+		printf ("\nx1 = %.3lf\n", x1);
+		printf ("\nx2 = %.3lf", x2);
+	}
+	if (delta==0) {
+		x1 = x2 = -b / (2*a);
+		printf ("MAMY JEDNO ROZWIAZANIE, BO DELTA JEST ROWNA 0.\n");
+		printf ("x1 = x2 = %.3lf", x1 = x2);
+	}
+	if (delta<0) {
+		printf ("BRAK ROZWIAZAN, BO DELTA JEST MNIEJSZA NIZ 0.");
+	}
+	getchar ();
+	getchar ();
+	return 0;
+}
+```
+**Zad. 2.** Znajdź liczby o tej wlasnosci, że suma dzielników wlasciwych liczby jest równa zadanej liczbie, np. 6=1+2+3. Sa to tak zwane liczby doskonale.
+```c
+# include <stdio.h>
+# include <math.h>
+int main (){
+	int x;
+	int d;
+	int suma;
+	int reszta;
+	for (x=2; x<=10000; x++)
+	{
+		suma=0;
+		for (d=1; d<x; d++)
+		{
+			reszta=x%d;
+			if (reszta==0)
+			{
+				suma=suma+d;
+			}
+		}
+		if (suma==x)
+		{
+			printf ("LICZBA %d JEST LICZBA DOSKONALA.\n", x);
+		}
+	}
+	getchar ();
+	getchar ();
+	return 0;
+}
+```
+**Zad. 3.** Wyswietl 20 różnych (tj. bez permutacji liczb) trójek pitagorejskich, tzn. takich liczb calkowitych dodatnich a, b i c, że a^2 + b^2 = c^2.
+```c
+# include <stdio.h>
+# include <math.h>
+int main (){
+	int a;
+	int b;
+	int c;
+	int licznik=1;
+	for (a=1; a<=100; a++)
+	{
+		for (b=a; b<=100; b++)
+			for (c=b; c<=100; c++)
+			{
+				if (a*a + b*b == c*c && licznik<=20)
+				{
+					printf ("\n\nTROJKA PITAGOREJSKA NR %d:", licznik);
+					printf (" %d %d %d", a, b, c);
+					licznik++;        
+				}
+			}
+	}
+	getchar ();
+	getchar ();
+	return 0;  
+}
+```
+**Zad. 4.** Napisz program podajacy najwieksza i najmniejsza z podanych liczb zmiennoprzecinkowych.
+```c
+# include <stdio.h>
+# include <math.h>
+int main (){
+	int k;
+	int x;
+	double n;
+	double zero=0.0;
+	double max=-1/zero;
+	double min=1/zero;
+	printf ("Podaj ilosc liczb (co najmniej 2): ");
+	scanf ("%d", &k);
+	for (x=1; x<=k; x++)
+	{
+		printf ("Podaj %d liczbe: ", x);
+		scanf ("%lf", &n);
+		if (n<min)
+			min = n;
+		if (n>max)
+			max = n;
+	}
+	printf ("MAX = %.3lf", max);
+	printf ("\nMIN = %.3lf", min);
+	getchar ();
+	return 0;
+}
+```
+**Zad. 5.** Napisz program wypisujacy slownie dzień tygodnia, jeżeli nr dnia tygodnia jest znany jako liczba (np. 3). Użyj instrukcji switch-case.
+```c
+#include<stdio.h>
+int main() {
+	int liczba;
+	printf("Wpisz liczbe, aby wyswietlic odpowiadajacy jej dzien tygodnia: ");
+	scanf("%d",&liczba);
+	switch(liczba)
+	{
+	case 1: 
+		printf("\nPONIEDZIALEK :)");
+		break; 
+	case 2: 
+		printf("\nWTOREK :)");
+		break;
+	case 3:
+		printf("\nSRODA :)");
+		break;
+	case 4:
+		printf("\nCZWARTEK :)");
+		break;
+	case 5:
+		printf("\nPIATEK :)");
+		break;
+	case 6:
+		printf("\nSOBOTA :)");
+		break;
+	case 7:
+		printf("\nNIEDZIELA :)");
+		break;
+	default: printf("\nNIE MA TAKIEGO DNIA TYGODNIA :(");
+		break;
+	}
+	getchar();
+	getchar();
+	return 0;
+}
+```
 
 ### **III. FUNKCJE**
 
