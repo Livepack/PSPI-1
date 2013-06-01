@@ -1,7 +1,5 @@
 # <li><a href="http://tao.inf.ug.edu.pl/">dr W.Bzyl</a>
 
----
-
 > Dzień bez kodowania jest dniem straconym :)
 
 Znaczniki:
