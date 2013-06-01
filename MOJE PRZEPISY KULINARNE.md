@@ -1,4 +1,4 @@
-http://akiszel.github.io/PSPI/
+[Przepisy kulinarne dla łasuchów :)](http://akiszel.github.io/PSPI/)
 
 **SPIS TRESCI**
 ---------------
