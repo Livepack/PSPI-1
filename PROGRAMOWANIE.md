@@ -1,3 +1,5 @@
+# <li><a href="http://iftia9.univ.gda.pl/~pg/">dr P.Gnaciński</a>
+
 ### **I. PETLE**
 
 **Zad. 1.** Wypisz liczby calkowite od 0 do 23:
