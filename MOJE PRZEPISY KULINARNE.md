@@ -1,6 +1,4 @@
-
 http://akiszel.github.io/PSPI/
-
 
 **SPIS TRESCI**
 ---------------
