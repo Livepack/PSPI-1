@@ -135,7 +135,8 @@ a.button {
   font-size: 23px;
   color: #fff;
   padding-left: 68px;
-  padding-top: 22px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
 }
 a.button small {
