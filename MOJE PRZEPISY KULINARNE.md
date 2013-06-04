@@ -1,21 +1,5 @@
 [Przepisy kulinarne dla łasuchów :)](http://akiszel.github.io/PSPI/)
 
-**SPIS TRESCI**
----------------
-<p>**1. CIASTA I DESERY.**<p>
-<ul>
-<li><a href="#">Tort bezowo-lodowy.</a></li>
-<li><a href="#">D ... Pawiana :)</a></li>
-<li><a href="#">Filadelfia.</a></li>
-<li><a href="#">Krople rosy.</a></li>
-</ul>
-<p>**2. ZAPIEKANKI.**
-<ul>
-<li><a href="#">Zapiekanka ziemniaczana.</a></li>
-<li><a href="#">Zapiekanka z pierogami.</a></li>
-<li><a href="#">Zapiekanka makaronowa.</a></li>
-</ul>
-<p>**3. SZYBKIE I SMACZNE OBIADY.**
 <ul>
 <li><a href="#">Zupa gulaszowa.</a></li>
 <li><a href="#">Skrzydelka z ryżem.</a></li>
