@@ -1009,3 +1009,119 @@ void wyswietlMacierz (double m[N][N], int wierszy, int kolumn)
 			printf ("%lf %c", m[i][j], j == kolumn - 1 ? '\n' : ' ');
 }
 ```
+**Program obliczajacy droge zatrzymania**
+```c
+#include <stdio.h>
+double wprV ();
+int wprX ();
+int wprY ();
+double ustalU (int z);
+void wypisz (char znak);
+double drogaH (double V, double u, double g);
+double drogaR (double V, double t);
+int main (){
+	int x, y = 0, z;
+	double V, u, g = 9.80665;
+	double s, s1, s2, s3;
+	double t1 = 0.85, t2 = 0.5;
+	char znak1 = '-', znak2 = '*';
+	wypisz (znak1);
+	V = wprV ();
+	wypisz (znak1);
+	printf ("\nWiedzac, ze: \n\n1 - beton \n\n2 - asfalt \n\n3 - kostka kamienna czysta \n\n4 - kostka kamienna zakurzona \n\n5 - klinkier \n\n6 - droga gruntowa twarda \n\n7 - zwir \n\n8 - droga pokryta sniegiem \n\n9 - droga oblodzona \n\n");
+	wypisz (znak1);
+	x = wprX ();
+	wypisz (znak1);
+	if (x <= 6)
+	{
+		printf ("\nWiedzac, ze: \n\n1 - suchy/sucha \n\n2 - mokry/mokra \n\n");
+		wypisz (znak1);
+		y = wprY ();
+		wypisz (znak1);
+	}
+	z = 10 * x + y;
+	u = ustalU (z);
+	wypisz (znak2);
+	s1 = drogaH (V, u, g);
+	s2 = drogaR (V, t1);
+	s3 = drogaR (V, t2);
+	s = s1 + s2 + s3;
+	printf ("\nDroga hamowania wynosi %.3lf m", s1);
+	printf ("\n\nDroga wynikajaca z czasu reakcji kierowcy wynosi %.3lf m", s2);
+	printf ("\n\nDroga wynikajaca z czasu reakcji ukladu hamulcowego wynosi %.3lf m", s3);
+	wypisz (znak2);
+	printf ("\nDROGA ZATRZYMANIA WYNOSI WIEC OKOLO %.0lf m", s);
+	wypisz (znak2);
+	getchar ();
+	return 0;
+}
+void wypisz (char znak)
+{
+	int i;
+	if (znak == '*')
+		printf ("\n\n");
+	for (i = 1; i <= 67; i++)
+		printf ("%c", znak);
+	printf ("\n");
+}
+double wprV ()
+{
+	double V;
+	do
+	{
+		printf ("\nPodaj predkosc w km/h: ");
+		scanf ("%lf", &V);
+		printf ("\n");
+	}
+	while (V <= 0 || V > 1500);
+	return V;
+}
+int wprX ()
+{
+	int x;
+	do
+	{
+		printf ("\nPodaj cyfre okreslajaca rodzaj nawierzchni: ");
+		scanf ("%d", &x);
+		printf ("\n");
+	}
+	while (x < 1 || x > 9);
+	return x;
+}
+int wprY ()
+{
+	int y;
+	do
+	{
+		printf ("\nPodaj cyfre okreslajaca stan okreslonej wczesniej nawierzchni: ");
+		scanf ("%d", &y);
+		printf ("\n");
+	}
+	while (!(y == 1 || y == 2));
+	return y;
+}
+double ustalU (int z)
+{
+	int i;
+	double u;
+	double tablica[15][2] = { {0.94,11} , {0.5,12} , {0.89,21} , {0.5,22} , {0.75,31} , {0.45,32} , {0.65,41} , {0.3,42} , {0.75,51} , {0.45,52} , {0.55,61} , {0.35,62} , {0.45,70} , {0.25,80} , {0.1,90} };
+	for (i=0; i<15; i++)
+	{
+	if (z == tablica[i][1])
+	u = tablica[i][0];
+    }
+	return u;
+}
+double drogaH (double V, double u, double g)
+{
+	double s;
+	s = ((V / 3.6) * (V / 3.6)) / (2 * u * g);
+	return s;
+}
+double drogaR (double V, double t)
+{
+	double s;
+	s = (t * V) / 3.6;
+	return s;
+}
+```
